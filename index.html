@@ -2,12 +2,222 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>One epage Layout</title>
+    <title>WCODEX OnePage Template</title>
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- ===== Navbar ===== -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">WCODEX</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#technologies">Technologies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== Hero Section ===== -->
+    <section
+      class="vh-100 d-flex flex-column justify-content-center align-items-center bg-dark text-white text-center"
+      id="hero"
+    >
+      <h1 class="display-4 fw-bold">We Build Modern Web Solutions</h1>
+      <p class="lead">Expert WordPress & Web Development by WCODEX</p>
+      <a href="#projects" class="btn btn-primary mt-3">View Our Work</a>
+    </section>
+
+    <!-- ===== About Us ===== -->
+    <section id="about" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4">About Us</h2>
+        <p class="mx-auto w-75">
+          We are a creative web development studio focused on crafting clean,
+          modern, and functional digital experiences using WordPress, React, and
+          modern web tools.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section id="services" class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Our Services</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3">
+              <h4>WordPress Development</h4>
+              <p>Custom themes, plugins, and complete website solutions.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3">
+              <h4>eCommerce Solutions</h4>
+              <p>WooCommerce integration and online store management.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm p-3">
+              <h4>React Web Apps</h4>
+              <p>Interactive single-page applications built with React.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Technologies ===== -->
+    <section id="technologies" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4">Technologies We Use</h2>
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+              width="60"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              width="60"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              width="60"
+            />
+          </div>
+          <div class="col-6 col-md-3">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+              width="60"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section id="projects" class="py-5">
+      <div class="container text-center">
+        <h2 class="mb-4">Our Projects</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://picsum.photos/400/250?random=1"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5>Portfolio Plugin</h5>
+                <p>
+                  Advanced filterable portfolio plugin using OOP structure in
+                  WordPress.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://picsum.photos/400/250?random=2"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5>CookPress Pro Theme</h5>
+                <p>
+                  Recipe blog theme with AJAX filtering, dark mode & WooCommerce
+                  integration.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow-sm">
+              <img
+                src="https://picsum.photos/400/250?random=3"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5>Custom Gutenberg Blocks</h5>
+                <p>
+                  Developed reusable and dynamic Gutenberg blocks for WordPress.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact Us ===== -->
+    <section id="contact" class="py-5 bg-light">
+      <div class="container text-center">
+        <h2 class="mb-4">Contact Us</h2>
+        <form class="w-75 mx-auto">
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Name"
+                required
+              />
+            </div>
+            <div class="col-md-6">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Your Email"
+                required
+              />
+            </div>
+          </div>
+          <textarea
+            class="form-control mb-3"
+            rows="4"
+            placeholder="Your Message"
+          ></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">© 2025 WCODEX. All Rights Reserved.</p>
+    </footer>
+
+    <script type="module" src="dist/assets/main.js"></script>
   </body>
 </html>
